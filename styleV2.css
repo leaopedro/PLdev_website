@@ -1,10 +1,10 @@
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,600);
+*{
+  font-family: 'Roboto', sans-serif;
+}
 html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    font-family: 'Source Sans Pro', sans-serif;
     position: relative;
 }
 body {
@@ -53,7 +53,7 @@ a:link, a:visited, a:hover, a:active {
     color: gainsboro;!important;
 }
 .nav-transparent #bar-list>li{
-    padding: 30px 65px;
+    padding: 30px 25px;
 
 }
 
@@ -97,11 +97,11 @@ ul li i{
     padding: 30px 0;
 }
 .main-call{
-    margin-top: 25%;
+    margin-right: 0;
 }
 
 #bar-list li{
-    padding: 0px 30px;
+    padding: 3px 25px;
     -webkit-transition: all .7s ease;
     -moz-transition: all .7s ease;
     -o-transition: all .7s ease;
@@ -109,7 +109,7 @@ ul li i{
     transition: all .7s ease;
 }
 #bar-list{
-    font-size: 15px;
+    font-size: 18px;
 }
 .full-height{
     height:100%;
@@ -137,6 +137,9 @@ ul li i{
 #overlay{
     position: fixed;
 }
+.call-container{
+  padding: 30px;
+}
 .home h1{
     font-size: 48px;
     color: #fff;
@@ -150,9 +153,6 @@ ul li i{
 }
 h2 span {
     font-weight: 400;
-}
-.bangers{
-    font-family: 'Bangers', cursive;
 }
 .screen{
     -webkit-transform: rotate(-10deg);
@@ -473,7 +473,9 @@ img.snap-code{
     }
     .social-item a {
         line-height: 106px;
+        font-size: 45px;
     }
+
 
 }
 @media (min-width: 541px) and (max-width: 650px){
