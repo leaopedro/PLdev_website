@@ -1,0 +1,162 @@
+
+html, body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    padding-top: 50px;
+    text-shadow: 0 0px 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+a {
+    color: #4a3826;
+}
+
+.jumbotron {
+    margin: 0px;
+    display: block;
+    padding: 30px 0;
+}
+
+#go-down{
+    font-size: 3em;
+    color: #4a3826;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+#abilities-title{
+    font-size: 40px;
+}
+
+h2, #who, #work, #contact-title, #java-dev, #visual-design-title {
+    font-weight: 200;
+    margin-top: 0%;
+}
+
+h2 span {
+    font-weight: 400;
+}
+
+.brown {
+    background-color: #4a3826;
+    color: #9ACD32;
+}
+
+.green {
+    background-color: #9ACD32;
+    color: #4a3826;
+}
+
+.logo {
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40%;
+}
+
+.item {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
+
+.service {
+    text-align: justify;
+}
+
+.img-contact {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+
+.contact-row {
+    margin-top: 25px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+.contact-btn {
+    margin-top: 0px;
+}
+
+.space,
+.space-sm,
+.space-md,
+.space-lg,
+.space-xlg {
+    display: block;
+    float: none;
+    clear: both;
+}
+
+.space-ssm {
+    padding-top: 5px;
+}
+
+.space-sm {
+    padding-top: 15px;
+}
+
+.space-md {
+    padding-top: 20px;
+}
+
+.space {
+    padding-top: 30px;
+}
+
+.space-lg {
+    padding-top: 50px;
+}
+
+.space-xlg {
+    padding-top: 80px;
+}
+/*.navbar{*/
+    /*background: #9ACD32;*/
+    /*border-color: #4a3826;*/
+/*}*/
+.carousel-full .item {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.contact-item{
+    background-color: white;
+    border-radius: 50%;
+    border: 1x solid grey;
+    padding:10px;
+}
+.icon-u {
+    color: #9ACD32;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    line-height: 195px !important;
+    background: #4a3826 ;
+    font-size: 150px !important;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.15);
+    display: inline-block;
+}
+.fa-whatsapp{
+    line-height: 175px !important;
+}
+.fa-envelope{
+    font-size: 120px !important;
+    line-height: 175px !important;
+}

@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'La-Babaca';
+  src: url('La-Babaca.eot?#iefix') format('embedded-opentype'),  url('La-Babaca.otf')  format('opentype'),
+	     url('La-Babaca.woff') format('woff'), url('La-Babaca.ttf')  format('truetype'), url('La-Babaca.svg#La-Babaca') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
