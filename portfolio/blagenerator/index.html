@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="BlaBlaBlaGenerator">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Gerador de de Bla Bla Bla</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+
+    <link type="text/css" rel="stylesheet" href="assets/slick/slick.css">
+
+    <link type="text/css" rel="stylesheet" href="assets/slick/slick-theme.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script type="text/javascript" src="assets/underscore-min.js"></script>
+
+    <script type="text/javascript" src="assets/angular.min.js"></script>
+
+    <script type="text/javascript" src="bla-gen.js"></script>
+
+</head>
+<body >
+
+<section class="jumbotron app-container">
+
+    <img class="img-responsive center-block main-logo" src="img/main-logo.png">
+
+    <div ng-controller="blaGenCtrl" class="bla-bla-gen-app text-center">
+
+        <p class="generatedBla">{{generatedBla}}</p>
+        <button class="btn btn-success btn-generate" ng-click="generateBla()">Gerar BlaBlaBla</button>
+    </div>
+</section>
+
+
+<footer class="footer text-center">
+    <p class="small">Desenvolvido por <a href="http://pedroleao.me">Pedro Leão</a> - AngularJS</p>
+</footer>
+
+<script src="assets/jquery-1.12.1.min.js"></script>
+
+<script src="assets/bootstrap.min.js"></script>
+<script src="assets/slick/slick.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

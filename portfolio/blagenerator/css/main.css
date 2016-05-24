@@ -1,0 +1,29 @@
+*{
+    font-family: "Open Sans";
+}
+.main-logo{
+    max-width: 80%;
+}
+.generatedBla{
+    background: #ffffff;
+    max-width: 80%;
+    margin: 50px 10%;
+    border-radius: 8.5px;
+    font-weight: 400;
+}
+.btn-generate{
+    width: 450px;
+    font-size: 27px;
+}
+@media (min-width: 768px){
+    .main-logo{
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 768px){
+    .btn-generate{
+        width: 80%;
+        margin: 10px 10%;
+    }
+}
