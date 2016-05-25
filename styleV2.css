@@ -134,9 +134,50 @@ ul li i{
     background-position: center;
     width: 100%;
 }
-#overlay{
+#overlay {
     position: fixed;
+    z-index: 1050;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
 }
+/*LOADER*/
+#overlay svg{
+	width: 100%;
+	height: 100%;
+}
+#overlay .rotate-45{
+	transform-origin: center;
+	transform: rotate(45deg)
+}
+#overlay .rotate{
+	transform-origin: center;
+	animation: rotate 1s ease-in-out infinite;
+}
+#overlay .rotate-back{
+	transform-origin: center;
+	animation: rotate 1s ease-in-out infinite;
+	animation-direction: reverse;
+}
+#overlay .left{
+	animation: move 1s ease-in-out infinite;
+}
+#overlay .right{
+	animation: move 1s ease-in-out infinite;
+}
+
+@keyframes rotate{
+	100%{
+		transform: rotate(calc(90deg + 45deg))
+	}
+}
+@keyframes move{
+	50%{
+		transform: translate(-30px,-30px)
+	}
+}
+
 .call-container{
   padding: 30px;
 }
