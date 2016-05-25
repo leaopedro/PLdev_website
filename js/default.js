@@ -1,15 +1,14 @@
 /**
- * Created by PEDRO on 13/06/2015.
+ * Created by PETER on 13/06/2015.
  */
-//(function($){
 $(document).ready(function () {
-    var $root = $('html, body');
-    startLoader();
     if (window.location.protocol == "http:") {
         var restOfUrl = window.location.href.substr(5);
         window.location.replace("https:" + restOfUrl);
     }
-    $('.home, #overlay').height(window.innerHeight);
+    $('#overlay').height(window.innerHeight);
+    
+    $('.home').height(window.innerHeight);
 
     generateImages();
 
@@ -37,9 +36,8 @@ $(document).ready(function () {
         singleItem: true,
         arrows: true
     });
-
     $('.scroll').click(function() {
-        $root.animate({
+        $('body').animate({
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 900);
         return false;
