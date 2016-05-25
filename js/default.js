@@ -7,7 +7,7 @@ $(document).ready(function () {
         window.location.replace("https:" + restOfUrl);
     }
     $('#overlay').height(window.innerHeight);
-    
+
     $('.home').height(window.innerHeight);
 
     generateImages();
@@ -66,7 +66,7 @@ $(document).ready(function () {
         window.open('https://www.facebook.com/leaop54','_blank');
     });
     $('.email').click(function() {
-        window.open('https://www.facebook.com/leaop54','_blank');
+        window.open('mailto:leaop54@gmail.com?Subject=Contato%20website','_blank');
     });
     $('.github').click(function() {
         window.open('https://github.com/leaopedro','_blank');
