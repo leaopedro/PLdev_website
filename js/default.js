@@ -3,6 +3,12 @@
  */
 //(function($){
 $(document).ready(function () {
+    var $root = $('html, body');
+
+    if (window.location.protocol == "http:") {
+        var restOfUrl = window.location.href.substr(5);
+        window.location.replace("https:" + restOfUrl);
+    }
 
     $("#overlay").removeClass("hidden");
 
@@ -10,28 +16,15 @@ $(document).ready(function () {
 
     $('.main-call').css('margin-top', (window.innerHeight*0.5));
 
-    var $root = $('html, body');
+    columnChart();
+
 
     var iOS = ( navigator.userAgent.match(/iPad|iPhone|iPod/g) ? true : false );
     if(iOS){
-        $('.home, .between-one, .between-two').css('background-attachment', 'scroll');
+        $('.home, .between-one, .between-two, .between-three').css('background-attachment', 'scroll');
     }
 
-    <!-- fundo alternado -->
-    var images = [];
-    for(var i = 0; i<10; i++){
-      console.log(i);
-      images[i] = "img/home"+i+".jpg";
-    }
-    var randnum = Math.random();
-    var rand1 = Math.round(randnum * (images.length - 1)) + 1;
-    var image = images[rand1];
-
-    if(image){
-      $(".home").css("background-image", "url('" + image + "')");
-    }else{
-      $(".home").css("background-image", "url('img/home4.jpg')");
-    }
+    generateImages();
 
     var navbar = $('.navbar');
     $(window).scroll(function () {
@@ -64,12 +57,9 @@ $(document).ready(function () {
         }else{
             navbar.removeClass("nav-transparent");
         }
-
-
         if ($(window).scrollTop() == 0) {
             navbar.removeClass("nav-transparent");
         }
-
     });
 
     $('.linkedin').click(function() {
@@ -99,9 +89,72 @@ $(document).ready(function () {
 
 });
 $(window).load(function () {
-    $("#overlay").addClass("hidden");
+  $("#overlay").addClass("hidden");
 });
 //});
+
+var generateImages = function () {
+  generateImagesArray(function(arrays){
+    var homeImg = getRandomImages(arrays.homes, 1)[0];
+    var betweensImgs = getRandomImages(arrays.bgs, 3);
+    // console.log(betweensImgs);
+    $('.home').css('background-image', "url('"+homeImg+"')");
+    $('.between-one').css('background-image', "url('"+betweensImgs[0]+"')");
+    $('.between-two').css('background-image', "url('"+betweensImgs[1]+"')");
+    $('.between-three').css('background-image', "url('"+betweensImgs[2]+"')");
+  });
+}
+
+function generateImagesArray(cb){
+  <!-- fundo alternado -->
+  var homes = [];
+  var bgs = [];
+  for(var i = 1; i<19; i++){
+    if(i<14){
+      bgs[i] = "img/bg"+i+".jpg";
+    }
+    homes[i] = "img/home"+i+".jpg";
+  }
+
+  cb({
+    homes: homes,
+    bgs: bgs
+  });
+}
+
+var getRandomNum = function (length, lastNum) {
+  var randnum = Math.random();
+  var rand = Math.round(randnum * (length - 1)) + 1;
+  if(lastNum && lastNum.length != 0 && lastNum.indexOf(rand) != -1){
+    return getRandomNum(length, lastNum);
+  }else{
+    return rand;
+  }
+}
+
+var getRandomImages = function(array, value){
+  var images = [];
+  var lastNum = [];
+  for(var i=0; i<value; i++){
+    var rand = getRandomNum(array.length-1, lastNum);
+    console.log(rand, array[rand]);
+    lastNum.push(rand);
+    images.push(array[rand]);
+  }
+  return images;
+}
+
+function columnChart(){
+    var item = $('.chart', '.column-chart').find('.item'),
+    itemWidth = 100 / item.length;
+    item.css('width', itemWidth + '%');
+
+    $('.column-chart').find('.item-progress').each(function(){
+        var itemProgress = $(this),
+        itemProgressHeight = $(this).parent().height() * ($(this).data('percent') / 100);
+        itemProgress.css('height', itemProgressHeight);
+    });
+};
 
 function detectmob() {
     if( navigator.userAgent.match(/Android/i)
