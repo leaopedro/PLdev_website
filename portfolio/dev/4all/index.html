@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Vamos conectar todos os momentos do seu dia, levando soluções digitais como gastronomia, mobilidade urbana, shopping, beleza, etc.">
+    <meta http-equiv="content-language" content="pt-br, en-US" />
+    <meta name="copyright" content="© 2016 4all Tecnologia" />
+    <meta name="keywords" content="4all, tecnologia, Pagamento, Momentos, etc" />
+
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="4all - Conectando momentos" />
+    <meta property="og:description" content="Vamos conectar todos os momentos do seu dia, levando soluções digitais como gastronomia, mobilidade urbana, shopping, beleza, etc." />
+    <!-- <meta property="og:url" content="http://4all.com"> -->
+    <meta property="og:site_name" content="4all">
+    <!-- <meta property="og:image" content="www.meusite.com.br/imagem.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="800"> /** PIXELS **/
+    <meta property="og:image:height" content="600"> /** PIXELS **/ -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- <meta name="twitter:site" content="@nytimes"> -->
+    <meta name="twitter:creator" content="@PdrLeao">
+    <meta name="twitter:title" content="4all - Conectando Momentos">
+    <meta name="twitter:description" content="Vamos conectar todos os momentos do seu dia, levando soluções digitais como gastronomia, mobilidade urbana, shopping, beleza, etc.">
+    <!-- <meta name="twitter:image" content=""> -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+
+    <title data-translate='mainPageTitle' >4all - Conectando momentos</title>
+    <link href='https://fonts.googleapis.com/css?family=Dosis:400,300,500,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fullPage/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class='navbar-container'>
+      <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/"><img src="img/logo4all-colorido.png" class='navbar-logo' alt="Logotipo 4all" /></a>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+          </div>
+          <div class="collapse navbar-collapse" id='navbar'>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a data-translate='whoWeAre' href="/sobre">Quem somos</a></li>
+              <li><a data-translate='workWithUs' href="/querofazerparte">Trabalhe conosco</a></li>
+              <li><a class='contact-link' data-toggle="collapse" data-target="#navbar"  data-translate='contactUs'>Entre em contato</a></li>
+              <li class='translate-page'><a data-translate='translatePage'>English version</a></li>
+              <!-- <li><a data-translate='clientAccess' href="https://dashboard.gateway.test.4all.com">Acesso cliente</a></li> -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+
+    <section class='loader-section text-center'>
+      <h1 class='loading-text'></h1>
+      <img src='img/4all-loader-verde.png' class="loader fa-spin" alt='Carregando' />
+    </section>
+
+    <div class='main-video-section text-center'>
+      <div class="close-main-video"><div class='x'></div></div>
+      <div id='main-video'></div>
+    </div>
+
+    <section class='main-section hidden' id='fullpage'>
+      <div class="section section-1 text-center">
+        <img src='img/logo4all-branco.png' id='main-logo' class='logo-animation' alt='Logotipo 4all' />
+        <img src='img/logo4all-gastronomia-branco.png' id='main-verticals-animation' class='logo-animation' alt='Logotipo 4all' />
+        <div class='under-logo'>
+          <div class='under-logo-line'></div>
+          <h1 data-translate='mainTitle' class='under-logo-text'>A vida é feita de momentos. <br /> Vamos conectar todos.</h1>
+          <button class='btn btn-video center-block'><div class='btn-icon'></div><span data-translate='watch' >Assista</span> </button>
+        </div>
+        <i class='fa fa-angle-down'></i>
+      </div>
+      <div class="section section-2">
+        <!--  VERT FOOD  -->
+        <div class="slide slide-1 active">
+          <div class='vert-circle vert-circle-1' id='main-vert-circle'>
+            <img src='img/logo4all-gastronomia-branco.png' class='verticals-logo' id='main-verticals-logo' alt='Logotipo 4all' />
+          </div>
+          <div class="hidden-xs vert-about-desktop vert-about-desktop-1">
+            <div class="vert-left-content text-right">
+              <h1 class="vert-content-title" data-translate='vertContentTitle'>Para cada momento, uma solução.</h1>
+            </div>
+            <div class='hand-space'></div>
+            <div class="vert-right-content">
+              <div class="vert-line vert-line-1"></div>
+              <div class="vert-title" data-translate='vertTitle1'>
+                4 FOOD
+              </div>
+              <p class="vert-desc" data-translate='vertDesc1'>
+                Experiência food digital em qualquer lugar, a qualquer momento.
+              </p>
+              <div class='vert-button hidden' data-translate='vertButton'>Saiba mais</div>
+            </div>
+          </div>
+          <img class="vert-hand vert-hand-food" src="img/gastro-hand.png" alt='4all' />
+
+          <div class='vert-about-mobile-background clearfix visible-xs'>
+            <div class='vert-about vert-about-mobile col-xs-4 opacity-normal'>
+                <div class="vert-line-mobile vert-line-mobile-1"></div>
+                <h2 class="vert-title" data-translate='vertTitle1'>4 FOOD</h2>
+                <p class="vert-desc" data-translate='vertDesc1'>
+                  Experiência food digital em qualquer lugar, a qualquer momento.
+                </p>
+            </div>
+            <div class='vert-about vert-about-mobile col-xs-4 opacity-normal'>
+              <div class="vert-line-mobile vert-line-mobile-2"></div>
+              <h2 class="vert-title" data-translate='vertTitle2'>4 PARK</h2>
+              <p class="vert-desc" data-translate='vertDesc2'>
+                Um novo conceito associado aos serviços de estacionamento.
+              </p>
+            </div>
+            <div class='vert-about vert-about-mobile col-xs-4 opacity-normal'>
+                <div class="vert-line-mobile vert-line-mobile-3"></div>
+                <h2 class="vert-title" data-translate='vertTitle3'>4 SHOPPING</h2>
+                <p class="vert-desc" data-translate='vertDesc3'>
+                  Vantagens exclusivas e direcionadas ao consumidor.
+                </p>
+            </div>
+          </div>
+        </div>
+        <!-- VERT PARKING -->
+        <div class="slide slide-2">
+          <div class='vert-circle vert-circle-2'>
+            <img src='img/logo4all-parking-branco.png' class='verticals-logo' alt='Logotipo 4all' />
+          </div>
+          <div class="hidden-xs vert-about-desktop vert-about-desktop-2">
+            <div class="vert-left-content text-right">
+              <h1 class="vert-content-title" data-translate='vertContentTitle'>Para cada momento, uma solução.</h1>
+            </div>
+            <div class='hand-space'></div>
+            <div class="vert-right-content">
+              <div class="vert-line-2 vert-line-park"></div>
+              <div class="vert-title" data-translate='vertTitle2'>
+                4 PARK
+              </div>
+              <p class="vert-desc" data-translate='vertDesc2'>
+                Um novo conceito associado aos serviços de estacionamento.
+              </p>
+              <div class='vert-button hidden' data-translate='vertButton'>Saiba mais</div>
+            </div>
+          </div>
+          <img class="vert-hand vert-hand-park" src="img/park-hand.png" alt='4all' />
+        </div>
+        <!-- VERT SHOPPING -->
+        <div class="slide slide-3">
+          <div class='vert-circle vert-circle-3'>
+            <img src='img/logo4all-shopping-branco.png' class='verticals-logo' alt='Logotipo 4all' />
+          </div>
+          <div class="hidden-xs vert-about-desktop vert-about-desktop-3">
+            <div class="vert-left-content text-right">
+              <h1 class="vert-content-title" data-translate='vertContentTitle'>Para cada momento, uma solução.</h1>
+            </div>
+            <div class='hand-space hand-space-3'></div>
+            <div class="vert-right-content">
+              <div class="vert-line-3 vert-line-park"></div>
+              <div class="vert-title" data-translate='vertTitle3'>
+                4 SHOPPING
+              </div>
+              <p class="vert-desc" data-translate='vertDesc3'>
+                Vantagens exclusivas e direcionadas ao consumidor.
+              </p>
+              <div class='vert-button hidden' data-translate='vertButton'>Saiba mais</div>
+            </div>
+          </div>
+          <img class="vert-hand vert-hand-shop" src="img/shop-hand.png" alt='4all' />
+        </div>
+
+      </div>
+      <div class='section video-section '>
+        <div class="col-xs-12 col-sm-7 col-watch-video">
+          <div class="watch-video-container">
+            <img class="play-icon" src="./img/video-play.png" />
+            <p class='watch-video-text' data-translate='watchTheVideo'>
+              Assista o vídeo explicativo
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5 about-video">
+          <h2 class="about-video-title title-medium" data-translate='aboutVideoTitle'>Seguro, simples, rápido e o melhor: em qualquer lugar e em qualquer momento.</h2>
+          <div class='under-title-line'></div>
+          <h3 class="about-video-subtitle title-small" data-translate='aboutVideoSubtitle'>Mais conveniência e segurança em seus pagamentos.</h3>
+        </div>
+      </div>
+      <div class="section together-section text-center">
+        <div class='backgrounds-container'>
+          <div class='0 active'></div>
+          <div class='1'></div>
+          <div class='2'></div>
+          <div class='3'></div>
+          <div class='4'></div>
+          <div class='5'></div>
+          <div class='6'></div>
+          <div class='7'></div>
+        </div>
+        <div class='title-container'>
+          <h1 class="title" data-translate='togetherWeAre4all'>Juntos somos 4all</h1>
+          <div class="border-under"></div>
+        </div>
+        <div class="btn-container">
+            <a href='/querofazerparte' class='button-come-together center-block' data-translate='comeWithUs'>Venha fazer parte da nossa equipe</a>
+        </div>
+      </div>
+      <div class="section map-section">
+        <div class="map"></div>
+        <div class="phrase-section text-center">
+          <h1 class='phrase' data-translate='bestWayBetween'>O caminho mais simples entre seu negócio e seus clientes.</h1>
+        </div>
+      </div>
+
+      <div class="section contact-section text-center" id='scroll'>
+        <h1 class='title' data-translate='comeVisitUs'>Venha nos conhecer</h1>
+        <div class="border-under"></div>
+
+        <div class='row first-row'>
+          <div class="col-xs-12 col-sm-6 left">
+            <p class='address'>
+              Rua Furriel Luíz Antônio de Vargas, 250 <br />
+              Porto Alegre, Rio Grande do Sul, Brasil <br />
+              CEP 90470-130 Fone: (51) 3021-2350
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 right text-left">
+            <a href='mailto:contato@4all.com' target="_blank"><div class='button email-button'>contato@4all.com</div></a>
+          </div>
+        </div>
+        <div class="row second-row">
+          <div class="col-xs-12 col-sm-6 left">
+            <p class='newsletter-desc' data-translate='receiveNewsletter'>
+              Receba nossas novidades por email
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-6 right text-left">
+            <input type='text' class="newsletter-input" placeholder="Email"/>
+            <div class='newsletter-button' data-translate='submit'>Assinar</div>
+            <div class='message success' data-translate='submitSuccess' >Muito bem! Agora você ficará por dentro de todas as novidades da 4all</div>
+            <div class='message error' data-translate='submitError' >Não pode ser enviado, tente mais tarde.</div>
+          </div>
+        </div>
+        <div class="row third-row">
+          <p class='social-title text-center' data-translate='followUs'>
+            Siga a 4all nas redes
+          </p>
+          <div class="col-xs-6 left text-right">
+            <a href='https://www.facebook.com/4alltecnologia/' target="_blank"><i class="fa fa-facebook-square"></i></a>
+          </div>
+          <div class="col-xs-6 right text-left">
+            <a href='https://www.linkedin.com/company/4all' target="_blank"><i class="fa fa-linkedin-square"></i></a>
+          </div>
+          <br />
+
+        </div>
+        <!-- <p class='translate-page text-center center-block' data-translate='translatePage'>English version</p> -->
+        <footer class="footer-section">
+            <p class="copyright">
+              Copyright 2016 / 4all.com
+            </p>
+        </footer>
+      </div>
+    </section>
+    <div class="modal fade" tabindex="-1" role="dialog" id='video-modal'>
+      <div class="modal-dialog">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="vid">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/cDeK0kA0KYo" allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDLmdQgMd7q1bpIh9ZN36aUVz-vutYcb6U"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="assets/jquery-1.12.3.min.js"></script>
+    <script src='assets/bootstrap/js/bootstrap.min.js' ></script>
+    <script src="assets/fullPage/jquery.fullPage.min.js"></script>
+    <script src="assets/translate/translate.js"></script>
+    <script src="js/default.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79356569-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
