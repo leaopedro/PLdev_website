@@ -2,10 +2,13 @@
  * Created by PETER on 13/06/2015.
  */
 $(document).ready(function () {
-    if (window.location.protocol == "http:") {
-        var restOfUrl = window.location.href.substr(5);
-        window.location.replace("https:" + restOfUrl);
-    }
+
+    //TODO descomentar para produção:
+    //if (window.location.protocol == "http:") {
+    //    var restOfUrl = window.location.href.substr(5);
+    //    window.location.replace("https:" + restOfUrl);
+    //}
+
     $('#overlay').height(window.innerHeight);
 
     $('.home').height(window.innerHeight);
@@ -41,6 +44,12 @@ $(document).ready(function () {
             scrollTop: $( $.attr(this, 'href') ).offset().top
         }, 900);
         return false;
+    });
+
+    $('.job-item').click(function() {
+        $(this).toggleClass("open");
+        $(this).toggleClass("closed");
+
     });
 
     $('.navbar-toggle').click(function() {
