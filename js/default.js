@@ -46,11 +46,11 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.job-item').click(function() {
-        $(this).toggleClass("open");
-        $(this).toggleClass("closed");
-
-    });
+    //$('.job-item').click(function() {
+    //    $(this).toggleClass("open");
+    //    $(this).toggleClass("closed");
+    //
+    //});
 
     $('.navbar-toggle').click(function() {
         if ($(window).scrollTop() == 0 && $('.navbar-toggle').hasClass('collapsed')) {
@@ -63,6 +63,25 @@ $(document).ready(function () {
         if ($(window).scrollTop() == 0) {
             navbar.removeClass("nav-transparent");
         }
+    });
+
+    $('.job-item .github-link').click(function(e) {
+        e.stopPropagation();
+    });
+    $('.job-item.fourall-gremio').click(function() {
+        window.open('http://4all.com/parceiros/gremio','_blank');
+    });
+    $('.job-item.workit').click(function() {
+        window.open('http://workit.rocks','_blank');
+    });
+    $('.job-item.fourall').click(function() {
+        window.open('https://pedroleao.me/portfolio/dev/4all','_blank');
+    });
+    $('.job-item.books').click(function() {
+        window.open('https://pedroleao.me/portfolio/dev/books','_blank');
+    });
+    $('.job-item.bla').click(function() {
+        window.open('https://pedroleao.me/portfolio/dev/blagenerator','_blank');
     });
 
     $('.linkedin').click(function() {

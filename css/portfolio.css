@@ -36,6 +36,12 @@
 
 }
 
+#portfolio .jobs-list-container .job-item .github-link{
+    font-size: 60px;
+}
+#portfolio .jobs-list-container .job-item .github-link:hover{
+    color: #264de4;
+}
 #portfolio .jobs-list-container .job-item.fourall{
     background-image: url("../img/4all.png");
 
@@ -46,6 +52,14 @@
 }
 #portfolio .jobs-list-container .job-item.workit{
     background-image: url("../img/workit.png");
+
+}
+#portfolio .jobs-list-container .job-item.books{
+    background-image: url("../img/books-redux.png");
+
+}
+#portfolio .jobs-list-container .job-item.bla{
+    background-image: url("../img/bla-generator.png");
 
 }
 
